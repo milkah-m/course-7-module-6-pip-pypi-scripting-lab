@@ -8,7 +8,7 @@ def generate_log(data):
         raise ValueError("This should be a list")
 
     # Make filename absolute to avoid NoneType / path issues
-    filename = os.path.abspath(f"log_{datetime.today().strftime('%Y%m%d')}.txt")
+    filename = (f"log_{datetime.today().strftime('%Y%m%d')}.txt")
 
     # Write entries (even if empty)
     with open(filename, "w") as file:
